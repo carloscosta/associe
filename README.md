@@ -4,6 +4,7 @@
 
 - Docker
 - Docker Compose
+- Make
 
 ## Usage
 
