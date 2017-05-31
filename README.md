@@ -1,1 +1,7 @@
 # associe
+
+## Usage
+
+```
+make up
+```
