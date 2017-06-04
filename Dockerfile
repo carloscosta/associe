@@ -1,8 +1,8 @@
-FROM python:3.5.3
+FROM node
 MAINTAINER Gomex "gomex@riseup.net"
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-COPY . /app
+COPY app/package.json /app/package.json
 WORKDIR /app
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+RUN npm install
+COPY app /app
+ENTRYPOINT ["npm"]
+CMD ["start"]
